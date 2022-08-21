@@ -9,6 +9,7 @@ const About = () => {
   const router = useRouter();
   const [active, setActive] = useState('');
   const { isNavbarActive } = useStateContext();
+  const [toggle, setToggle] = useState('experience');
 
   useEffect(() => {
     if (router.pathname === '/about' && !isNavbarActive) {
@@ -59,94 +60,94 @@ const About = () => {
             </div>
 
             <div className='about-tabs'>
-              {/* <button
-                className='tab-item active'
-                data-target='#education'
-                type='button'
-              >
-                education
-              </button> */}
               <button
-                className='tab-item active'
+                className={`tab-item ${
+                  toggle === 'experience' ? 'active' : ''
+                }`}
                 data-target='#experience'
+                onClick={() => setToggle('experience')}
                 type='button'
               >
                 experience
               </button>
+              <button
+                className={`tab-item ${toggle === 'education' ? 'active' : ''}`}
+                data-target='#education'
+                onClick={() => setToggle('education')}
+                type='button'
+              >
+                education
+              </button>
             </div>
 
             {/* <!-- Education Start --> */}
-            {/* <div className='tab-content active' id='education'>
-              <div className='timeline'>
-                <div className='timeline-item'>
-                  <span className='date'>2013 - 2016</span>
-                  <h4>
-                    bachelor of technology - <span>todfod university</span>
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-                    assumenda at error eius repudiandae tenetur.
-                  </p>
-                </div>
-                <div className='timeline-item'>
-                  <span className='date'>2013 - 2016</span>
-                  <h4>
-                    bachelor of technology - <span>todfod university</span>
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-                    assumenda at error eius repudiandae tenetur.
-                  </p>
-                </div>
-                <div className='timeline-item'>
-                  <span className='date'>2013 - 2016</span>
-                  <h4>
-                    bachelor of technology - <span>todfod university</span>
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-                    assumenda at error eius repudiandae tenetur.
-                  </p>
+            {toggle === 'education' && (
+              <div className='tab-content active' id='education'>
+                <div className='timeline'>
+                  <div className='timeline-item'>
+                    <span className='date'>Mar 2021 - July 2021</span>
+                    <h4>
+                      Full Stack Developer Bootcamp -{' '}
+                      <span>Hacktiv8 Indonesia</span>
+                    </h4>
+                    <p>Honorary award</p>
+                  </div>
+                  <div className='timeline-item'>
+                    <span className='date'>2015 - 2020</span>
+                    <h4>
+                      {`Bachelor's degree -`} <span>Andalas University</span>
+                    </h4>
+                    <p>GPA 3.42 / 4</p>
+                  </div>
                 </div>
               </div>
-            </div> */}
+            )}
+
             {/* <!-- Education End --> */}
 
             {/* <!-- Experience Start --> */}
-            <div className='tab-content active' id='experience'>
-              <div className='timeline'>
-                <div className='timeline-item'>
-                  <span className='date'>Sep 2021 - Now</span>
-                  <h4>
-                    Full Stack Developer -{' '}
-                    <span>PT. Bhumi Varta Technology</span>
-                  </h4>
-                  <p>Tech Stack Backend: Express</p>
-                </div>
-                <div className='timeline-item'>
-                  <span className='date'>Mei 2020 - Feb 2021</span>
-                  <h4>
-                    Director - <span>QOSin Indonesia</span>
-                  </h4>
-                  <p>
-                    - Handle business agent boarding house (primer), travel, and
-                    convection for market student
-                    <br /> - Handle cooperation partner QOSin
-                  </p>
-                </div>
-                <div className='timeline-item'>
-                  <span className='date'>Jan 2020 - Jan 2021</span>
-                  <h4>
-                    Manager of Events -{' '}
-                    <span>Muda Mandiri Group Indonesia (MMGI)</span>
-                  </h4>
-                  <p>
-                    - Handle concept event organizer
-                    <br />- Marketing event organizer
-                  </p>
+            {toggle === 'experience' && (
+              <div className='tab-content active' id='experience'>
+                <div className='timeline'>
+                  <div className='timeline-item'>
+                    <span className='date'>Sep 2021 - Now</span>
+                    <h4>
+                      Full Stack Developer -{' '}
+                      <span>PT. Bhumi Varta Technology</span>
+                    </h4>
+                    <p>
+                      Bhumi Varta Technology is Indonesia’s leading GeoSpatial
+                      Technology Company. We provide the best tools for
+                      businesses to make the right decisions by giving them
+                      Geospatial, Geographic, as well as Demographic insights
+                    </p>
+                  </div>
+                  <div className='timeline-item'>
+                    <span className='date'>Mei 2020 - Feb 2021</span>
+                    <h4>
+                      Director - <span>QOSin Indonesia</span>
+                    </h4>
+                    <p>
+                      - Handle business agent boarding house (primer), travel,
+                      and convection for market student
+                      <br /> - Handle cooperation partner QOSin
+                    </p>
+                  </div>
+                  <div className='timeline-item'>
+                    <span className='date'>Jan 2020 - Jan 2021</span>
+                    <h4>
+                      Manager of Events -{' '}
+                      <span>Muda Mandiri Group Indonesia (MMGI)</span>
+                    </h4>
+                    <p>
+                      - Handle concept event organizer
+                      <br />- Marketing event organizer
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
+
             {/* <!-- Experience End --> */}
             {/* <!-- <a href="cv.pdf" target="_blank" className="btn">download cv</a> --> */}
             <Link href='/portfolio'>
