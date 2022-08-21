@@ -24,7 +24,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Portfolio - Ahmad Faisal</title>
+        <title>Achmad Faisal</title>
         <meta content='Portfolio Ahmad Faisal' name='description' />
         <link href='/Ahmad Faisal - Bg Hijau.png' rel='icon' />
       </Head>
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
           <div className='row align-items-center'>
             <div className='home-text'>
               <p>{`Hello, I'm`}</p>
-              <h1>Ahmad Faisal</h1>
+              <h1>Achmad Faisal</h1>
               <h2>Full Stack Developer</h2>
               <Link href='/about'>
                 <a className='btn link-item' href='#about'>

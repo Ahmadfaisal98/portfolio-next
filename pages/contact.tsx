@@ -87,10 +87,6 @@ const Contact = () => {
           </div>
           <div className='contact-info'>
             <div className='contact-info-item'>
-              <h3>Email</h3>
-              <p>ahmadfaisal2098@gmail.com</p>
-            </div>
-            <div className='contact-info-item'>
               <h3>follow me</h3>
               <div className='social-links'>
                 <a
@@ -106,6 +102,13 @@ const Contact = () => {
                   target='_blank'
                 >
                   <i className='fab fa-github' />
+                </a>
+                <a
+                  href='https://www.linkedin.com/in/ahmad-faisal-a65b77217/'
+                  rel='noreferrer'
+                  target='_blank'
+                >
+                  <i className='fa-brands fa-linkedin' />
                 </a>
               </div>
             </div>
