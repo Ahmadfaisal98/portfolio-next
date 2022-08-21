@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import Popup from '../components/Popup';
 import profileHome from '../img/profile/Ahmad_Faisal_-_crop-removebg-preview (1).png';
 import { useStateContext } from '../context/StateContext';
 
@@ -28,8 +27,6 @@ const Home: NextPage = () => {
         <meta content='Portfolio Ahmad Faisal' name='description' />
         <link href='/Ahmad Faisal - Bg Hijau.png' rel='icon' />
       </Head>
-
-      <Popup />
 
       <section
         className={`home-section align-items-center ${active}`}

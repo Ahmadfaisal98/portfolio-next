@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const Header = () => {
   const ref = useRef<HTMLInputElement>(null);
   const refToggle = useRef<HTMLInputElement>(null);
-  const { setIsNavbarActive, isNavbarActive } = useStateContext();
+  const { setIsNavbarActive, isNavbarActive, isOpenPopup } = useStateContext();
 
   useEffect(() => {
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -94,7 +94,7 @@ const Header = () => {
           <div className='container'>
             <div className='row flex-end'>
               <div
-                className='nav-toggler'
+                className={`nav-toggler ${isOpenPopup ? 'hidden' : ''}`}
                 onClick={() => {
                   setIsNavbarActive(!isNavbarActive);
                 }}
