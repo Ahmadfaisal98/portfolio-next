@@ -135,7 +135,7 @@ const About = () => {
                   </p>
                 </div>
                 <div className='timeline-item'>
-                  <span className='date'>2013 - 2016</span>
+                  <span className='date'>Jan 2020 - Jan 2021</span>
                   <h4>
                     Manager of Events -{' '}
                     <span>Muda Mandiri Group Indonesia (MMGI)</span>
