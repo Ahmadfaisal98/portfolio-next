@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React, { useEffect, useRef } from 'react';
 import { useStateContext } from '../context/StateContext';
 
-const Popup = ({ title, created, desc, image, technologies, view }: any) => {
+const Popup = ({ title, desc, image, technologies, view }: any) => {
   const { isOpenPopup, setIsOpenPopup } = useStateContext();
   const ref = useRef<HTMLInputElement>(null);
   const refToggle = useRef<HTMLInputElement>(null);
