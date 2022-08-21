@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
@@ -21,6 +22,11 @@ const Portfolio = () => {
 
   return (
     <>
+      <Head>
+        <title>Achmad Faisal | Portfolio</title>
+        <meta content='About Ahmad Faisal' name='description' />
+        <link href='/Ahmad Faisal - Bg Hijau.png' rel='icon' />
+      </Head>
       <section
         className={`portfolio-section sec-padding ${active}`}
         id='portfolio'
