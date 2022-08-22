@@ -778,8 +778,16 @@ Portfolio Section
 /* -------------------
 Contact Section
 ----------------------*/
-.contact-form,
-.contact-info {
+.contact-section {
+  position: relative;
+}
+.contact-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-form {
   padding: 0 15px;
 }
 .contact-form .input-group {
@@ -814,15 +822,16 @@ Contact Section
   resize: none;
   padding-top: 15px;
 }
-.contact-info-item {
-  margin: 0 0 30px;
-  padding: 0 0 0 20px;
+.contact-info {
+  position: absolute;
+  bottom: 80px;
 }
 .contact-info-item h3 {
   font-size: 20px;
   text-transform: capitalize;
   margin: 0 0 5px;
 }
+
 .contact-info-item .social-links a {
   display: inline-flex;
   align-items: center;
@@ -868,7 +877,6 @@ Contact Section
 }
 @media (max-width: 767px) {
   .contact-form,
-  .contact-info,
   .about-img,
   .about-text {
     width: 100%;
@@ -881,10 +889,6 @@ Contact Section
   }
   .pp-inner {
     padding: 30px 15px;
-  }
-  .contact-info {
-    order: -1;
-    margin-bottom: 15px;
   }
   .contact-info-item {
     padding: 0;
