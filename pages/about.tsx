@@ -103,7 +103,7 @@ const About = () => {
                       <p>Honorary award</p>
                     </div>
                     <div className='timeline-item'>
-                      <span className='date'>2015 - 2020</span>
+                      <span className='date'>Jul 2015 - Jan 2020</span>
                       <h4>
                         {`Bachelor's degree -`} <span>Andalas University</span>
                       </h4>
