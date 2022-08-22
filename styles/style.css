@@ -779,7 +779,8 @@ Portfolio Section
 Contact Section
 ----------------------*/
 .contact-section {
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .contact-section .container {
   display: flex;
@@ -818,13 +819,17 @@ Contact Section
   border-color: var(--white-alpha-40);
 }
 .contact-form textarea.input-control {
-  height: 120px;
+  height: 150px;
   resize: none;
   padding-top: 15px;
 }
 .contact-info {
-  position: absolute;
-  bottom: 80px;
+  display: flex;
+  min-height: 120px;
+  height: calc(100vh - 700px);
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 .contact-info-item h3 {
   font-size: 20px;
