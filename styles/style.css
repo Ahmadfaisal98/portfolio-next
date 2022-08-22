@@ -826,7 +826,7 @@ Contact Section
 .contact-info {
   display: flex;
   min-height: 120px;
-  height: calc(100vh - 700px);
+  height: calc(100vh - 720px);
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
