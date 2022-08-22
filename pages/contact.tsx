@@ -55,10 +55,10 @@ const Contact = () => {
               <h2>contact me</h2>
             </div>
           </div>
-          <div className='row'>
+          <div className='row justify-center'>
             <div className='contact-form'>
               <form onSubmit={sendEmail} ref={form}>
-                <div className='row'>
+                <div className='row justify-center'>
                   <div className='input-group'>
                     <input
                       className='input-control'

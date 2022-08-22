@@ -9,44 +9,6 @@ const Header = () => {
   const { setIsNavbarActive, isNavbarActive, isOpenPopup } = useStateContext();
 
   useEffect(() => {
-    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-    const vh = window.innerHeight * 0.01;
-    // Then we set the value in the --vh custom property to the root of the document
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-    // We listen to the resize event
-    window.addEventListener('resize', () => {
-      // We execute the same script as before
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    });
-
-    const handler = () => {
-      document.querySelector('.main')?.classList.remove('hidden');
-      document.querySelector('.home-section')?.classList.add('active');
-
-      // Page loader
-      document.querySelector('.page-loader')?.classList.add('fade-out');
-      setTimeout(() => {
-        const el = document.querySelector<HTMLElement>('.page-loader');
-        if (el) {
-          el.style.display = 'none';
-        }
-      }, 600);
-    };
-    if (document.readyState === 'complete') {
-      handler();
-    } else {
-      window.addEventListener('load', handler);
-      return () => document.removeEventListener('load', handler);
-    }
-
-    return () => {
-      null;
-    };
-  });
-
-  useEffect(() => {
     const handleClickOutside = (evt: any) => {
       if (
         ref.current &&
@@ -88,7 +50,7 @@ const Header = () => {
       {/* <!-- Overlay End --> */}
 
       {/* <!-- Main Start --> */}
-      <div className='main hidden'>
+      <div className='main'>
         {/* <!-- Header Start --> */}
         <header className={`header ${isNavbarActive ? 'active' : ''}`}>
           <div className='container'>

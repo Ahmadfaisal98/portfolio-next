@@ -55,7 +55,6 @@ const Home: NextPage = () => {
                   alt='profile'
                   layout='responsive'
                   priority
-                  sizes='200 250 300'
                   src={profileHome}
                 />
               </div>
