@@ -1,9 +1,9 @@
 import reactNatour from '../img/portfolio real/react-natour.png';
 import game2048 from '../img/portfolio real/game-2048.png';
-import linkedIn from '../img/portfolio real/linkedin-clone.png';
 import netflix from '../img/portfolio real/netflix-clone.png';
-import ahmadStore from '../img/portfolio real/ahmad store.png';
 import spotify from '../img/portfolio real/spotify-clone.png';
+import cleaningService from '../img/portfolio real/cleaning-service.png';
+import ahmadFaisal from '../img/portfolio real/achmad-faisal.png';
 
 export const dataPortfolio = [
   {
@@ -21,11 +21,11 @@ export const dataPortfolio = [
     view: 'https://game-2048-achmad.vercel.app/',
   },
   {
-    title: 'Clone - LinkedIn',
-    image: linkedIn,
-    desc: `Simple clone LinkedIn`,
-    technologies: 'NextJs, Tailwind',
-    view: 'https://linkedin-clone-faisal.vercel.app/',
+    title: 'Portfolio - Achmad Faisal',
+    image: ahmadFaisal,
+    desc: `My portfolio website`,
+    technologies: 'NextJs, css',
+    view: 'https://www.achmadfaisal.com/',
   },
   {
     title: 'Clone - Netflix',
@@ -35,11 +35,11 @@ export const dataPortfolio = [
     view: 'https://netflix-clone-faisal.vercel.app/',
   },
   {
-    title: 'Ahmad Store',
-    image: ahmadStore,
-    desc: `Simple ecommerce site`,
-    technologies: 'NextJs, Tailwind, stripe',
-    view: 'https://ahmadstore-sanity-stripe.vercel.app/',
+    title: 'Cleaning Service',
+    image: cleaningService,
+    desc: `Landing page static with full animation`,
+    technologies: 'javasctipt, css, aos',
+    view: 'https://cleaning-service-achmad.vercel.app/',
   },
   {
     title: 'Clone - Spotify',
