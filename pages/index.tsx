@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import profileHome from '../img/profile/Ahmad_Faisal_-_crop-removebg-preview (1).png';
+import profileHome from '/public/img/profile/Ahmad_Faisal_-_crop-removebg-preview (1).png';
 import { useStateContext } from '../context/StateContext';
 
 const Home: NextPage = () => {

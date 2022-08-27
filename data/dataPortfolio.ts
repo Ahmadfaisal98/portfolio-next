@@ -1,9 +1,9 @@
-import reactNatour from '../img/portfolio real/react-natour.png';
-import game2048 from '../img/portfolio real/game-2048.png';
-import netflix from '../img/portfolio real/netflix-clone.png';
-import spotify from '../img/portfolio real/spotify-clone.png';
-import cleaningService from '../img/portfolio real/cleaning-service.png';
-import ahmadFaisal from '../img/portfolio real/achmad-faisal.png';
+import reactNatour from '/public/img/portfolio real/react-natour.png';
+import game2048 from '/public/img/portfolio real/game-2048.png';
+import netflix from '/public/img/portfolio real/netflix-clone.png';
+import spotify from '/public/img/portfolio real/spotify-clone.png';
+import cleaningService from '/public/img/portfolio real/cleaning-service.png';
+import ahmadFaisal from '/public/img/portfolio real/achmad-faisal.png';
 
 export const dataPortfolio = [
   {
