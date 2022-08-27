@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
-import profileAbout from '../img/profile/Ahmad_Faisal_-_tangan_silang_-_crop-removebg-preview.png';
+import profileAbout from '/public/img/profile/Ahmad_Faisal_-_tangan_silang_-_crop-removebg-preview.png';
 import { useStateContext } from '../context/StateContext';
 import Link from 'next/link';
 import Head from 'next/head';
