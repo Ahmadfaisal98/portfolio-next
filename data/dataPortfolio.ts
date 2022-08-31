@@ -1,9 +1,9 @@
 import reactNatour from '/public/img/portfolio real/react-natour.png';
 import game2048 from '/public/img/portfolio real/game-2048.png';
 import netflix from '/public/img/portfolio real/netflix-clone.png';
-import spotify from '/public/img/portfolio real/spotify-clone.png';
 import cleaningService from '/public/img/portfolio real/cleaning-service.png';
 import ahmadFaisal from '/public/img/portfolio real/achmad-faisal.png';
+import mobileApp from '/public/img/portfolio real/landing-page-mobile-app.png';
 
 export const dataPortfolio = [
   {
@@ -35,17 +35,17 @@ export const dataPortfolio = [
     view: 'https://netflix-clone-faisal.vercel.app/',
   },
   {
-    title: 'Cleaning Service',
+    title: 'Landing page - Cleaning Service',
     image: cleaningService,
     desc: `Landing page static with full animation`,
     technologies: 'javasctipt, css, aos',
     view: 'https://cleaning-service-achmad.vercel.app/',
   },
   {
-    title: 'Clone - Spotify',
-    image: spotify,
-    desc: `Simple clone spotify`,
-    technologies: 'NextJs, Tailwind',
-    view: 'https://spotify-clone-iota-one.vercel.app/',
+    title: 'Landing page - mobile app',
+    image: mobileApp,
+    desc: `Landing page static with full animation`,
+    technologies: 'javacript, jQuery, bootstrap',
+    view: 'https://landing-mobile-app-achmad.vercel.app/',
   },
 ];
