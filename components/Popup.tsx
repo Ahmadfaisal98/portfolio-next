@@ -33,7 +33,7 @@ const Popup = ({ title, desc, image, technologies, view }: any) => {
               <i className='fas fa-times' />
             </div>
             <div className='pp-thumbnail'>
-              <Image alt='pp-thumbnail' src={image} />
+              {image && <Image alt='pp-thumbnail' src={image} />}
             </div>
             <h3 className='portfolio-item-title'>{title}</h3>
           </div>
