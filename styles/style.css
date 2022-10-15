@@ -770,6 +770,11 @@ Portfolio Section
 .pp-body .general-info li span {
   font-weight: 300;
 }
+.pp-body .general-info li .array-tech {
+  display: grid;
+  grid-template-columns: 20px auto;
+  padding-left: 20px;
+}
 .pp-body .general-info li a {
   text-transform: lowercase;
   color: var(--main-color);

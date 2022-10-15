@@ -44,7 +44,16 @@ const Popup = ({ title, desc, image, technologies, view }: any) => {
             <div className='general-info'>
               <ul>
                 <li>
-                  technologies used - <span>{technologies}</span>
+                  technologies used
+                  {Array.isArray(technologies) ? (
+                    technologies.map((e, i) => (
+                      <div className='array-tech' key={i}>
+                        - <span className='desc-array'>{e}</span>
+                      </div>
+                    ))
+                  ) : (
+                    <span> - {technologies}</span>
+                  )}
                 </li>
                 <li>
                   View Online -{' '}
