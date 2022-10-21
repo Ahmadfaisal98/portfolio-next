@@ -21,7 +21,7 @@ export const dataPortfolio = [
     ],
     view: [
       {
-        link: 'https://facebook-clone-ahmad.vercel.app/',
+        link: 'https://social-clone-ahmad.vercel.app/',
         icon: 'fa-solid fa-globe',
         label: 'View Online',
       },
@@ -33,8 +33,8 @@ export const dataPortfolio = [
     desc: `Simple website with authentication (login, register), home page, detail page, search page, dark mode, full responsive. 
       It is built from TypeScript, Next Js, and has CI/CD`,
     technologies: [
-      'Frontend: TypeScript, NextJs (with SSG, SSR), Storybook (with UI Test, Chromatic), Jest, emotion, redux',
-      'Backend: Strapi',
+      'Frontend: TypeScript, NextJs (with SSG, SSR), Storybook (with UI Test, Chromatic), Jest, Emotion, Redux, Vercel',
+      'Backend: Strapi, PostgreSQL, Heroku',
       'CI/CD: Github Actions, chromatic deployment, check code (with jest, eslint), storybook publish, UI Tests, Deploy Vercel',
     ],
     view: [
