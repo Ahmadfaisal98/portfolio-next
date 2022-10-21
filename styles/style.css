@@ -842,7 +842,12 @@ Contact Section
   margin: 0 0 5px;
 }
 
-.contact-info-item .social-links a {
+.social-links {
+  display: flex;
+  gap: 7px;
+}
+
+.social-links a {
   display: inline-flex;
   align-items: center;
   justify-content: center;

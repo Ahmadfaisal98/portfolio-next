@@ -56,12 +56,19 @@ const Popup = ({ title, desc, image, technologies, view }: any) => {
                   )}
                 </li>
                 <li>
-                  View Online -{' '}
-                  <span>
-                    <a href={view} rel='noreferrer' target='_blank'>
-                      {view}
-                    </a>
-                  </span>
+                  <div className='social-links'>
+                    {view?.map(({ link, icon, label }: any) => (
+                      <a
+                        href={link}
+                        key={link}
+                        rel='noreferrer'
+                        target='_blank'
+                        title={label}
+                      >
+                        <i className={icon} />
+                      </a>
+                    ))}
+                  </div>
                 </li>
               </ul>
             </div>
