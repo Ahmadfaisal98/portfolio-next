@@ -1,4 +1,4 @@
-import reactNatour from '/public/img/portfolio real/react-natour.png';
+import yourcar from '/public/img/portfolio real/yourcar.png';
 import game2048 from '/public/img/portfolio real/game-2048.png';
 import facebook from '/public/img/portfolio real/facebook-clone.png';
 import courseBox from '/public/img/portfolio real/courseBox.png';
@@ -10,9 +10,9 @@ export const dataPortfolio = [
     title: 'Clone - Facebook',
     image: facebook,
     desc: `Facebook clone with full authentication (login, register, reset, forgot password with OAuth2 google mail),
-     homepage (CRUD Post with emoji, react, comment, save post, download images), 
-     profile page (update photo and cover with custom crop image, CRUD Post), 
-     friends page (sent, request, follow, all friend, search friend), dark mode, full responsive`,
+      homepage (CRUD Post with emoji, react, comment, save post, download images), 
+      profile page (update photo and cover with custom crop image, CRUD Post), 
+      friends page (sent, request, follow, all friend, search friend), dark mode, full responsive`,
     technologies: [
       `Frontend: React, sass, redux (rtk query with auto refetch, auto cache, redux persist), 
       formik (with yup), debounce, react-moment, react-loading-skeleton, react-easy-crop.`,
@@ -51,11 +51,21 @@ export const dataPortfolio = [
     ],
   },
   {
-    title: 'Landing page - Natours',
-    image: reactNatour,
-    desc: `Landing page static with full animation`,
-    technologies: 'React, sass',
-    view: [{ link: 'https://react-natour.web.app', icon: 'fa-solid fa-globe' }],
+    title: 'Landing page - Yourcar',
+    image: yourcar,
+    desc: `Landing page with typescript, graphql, nestjs, styled-component, tailwind, full responsive`,
+    technologies: [
+      `Frontend: React, typescript, redux (with graphql), styled-component, tailwind`,
+      `Backend: Nestjs, typescript, postgres`,
+    ],
+    view: [
+      { link: 'https://yourcar.vercel.app/', icon: 'fa-solid fa-globe' },
+      {
+        link: 'https://github.com/Ahmadfaisal98/yourcar',
+        icon: 'fa-brands fa-github',
+        label: 'View Github',
+      },
+    ],
   },
   {
     title: 'Game - 2048',
