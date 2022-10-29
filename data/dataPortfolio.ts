@@ -37,6 +37,24 @@ export const dataPortfolio = [
       'Backend: Strapi, PostgreSQL, Heroku',
       'CI/CD: Github Actions, chromatic deployment, check code (with jest, eslint), storybook publish, UI Tests, Deploy Vercel',
     ],
+    extraLinks: [
+      {
+        label: 'Sonar-check',
+        link: 'https://sonarcloud.io/summary/overall?id=Ahmadfaisal98_coursebox',
+        title: 'Quality Code',
+      },
+      {
+        label: 'Storybook',
+        link: 'https://63162231c41e0fd82718a836-gwvicmaquy.chromatic.com/',
+        title: 'UI components',
+      },
+      {
+        label: 'Chromatic',
+        link: 'https://www.chromatic.com/build?appId=63162231c41e0fd82718a836&number=42',
+        title:
+          'Automates gathering UI feedback, visual testing, and documentation,',
+      },
+    ],
     view: [
       {
         link: 'https://coursebox-ahmad.vercel.app/',
@@ -70,7 +88,7 @@ export const dataPortfolio = [
   {
     title: 'Game - 2048',
     image: game2048,
-    desc: `Simple clone game 2048`,
+    desc: `Simple clone game 2048, work with arrow keyboard and touch screen on the phone`,
     technologies: 'javascript, css',
     view: [
       {

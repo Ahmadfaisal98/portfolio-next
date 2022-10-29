@@ -770,10 +770,13 @@ Portfolio Section
 .pp-body .general-info li span {
   font-weight: 300;
 }
-.pp-body .general-info li .array-tech {
+.pp-body .general-info li .array-info {
   display: grid;
   grid-template-columns: 20px auto;
   padding-left: 20px;
+}
+.pp-body .general-info li .array-info a:hover {
+  opacity: 80%;
 }
 .pp-body .general-info li a {
   text-transform: lowercase;
@@ -859,6 +862,7 @@ Contact Section
   border-radius: 50%;
   margin: 6px 4px 0 0;
   transition: all 0.3s ease;
+  padding: 0;
 }
 .contact-info-item .social-links a:hover {
   color: var(--white);

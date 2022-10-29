@@ -39,7 +39,10 @@ const Portfolio = () => {
           </div>
           <div className='row'>
             {dataPortfolio.map(
-              ({ title, desc, image, technologies, view }, index) => (
+              (
+                { title, desc, image, technologies, view, extraLinks },
+                index
+              ) => (
                 <div className='portfolio-item' key={index}>
                   <div className='portfolio-item-thumbnail'>
                     <Image alt='portfolio item thumb' src={image} />
@@ -55,6 +58,7 @@ const Portfolio = () => {
                         image,
                         technologies,
                         view,
+                        extraLinks,
                       });
                     }}
                     type='button'

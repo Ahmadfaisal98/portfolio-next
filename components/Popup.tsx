@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React, { useEffect, useRef } from 'react';
 import { useStateContext } from '../context/StateContext';
 
-const Popup = ({ title, desc, image, technologies, view }: any) => {
+const Popup = ({ title, desc, image, technologies, view, extraLinks }: any) => {
   const { isOpenPopup, setIsOpenPopup } = useStateContext();
   const ref = useRef<HTMLInputElement>(null);
   const refToggle = useRef<HTMLInputElement>(null);
@@ -47,7 +47,7 @@ const Popup = ({ title, desc, image, technologies, view }: any) => {
                   technologies used
                   {Array.isArray(technologies) ? (
                     technologies.map((e, i) => (
-                      <div className='array-tech' key={i}>
+                      <div className='array-info' key={i}>
                         - <span className='desc-array'>{e}</span>
                       </div>
                     ))
@@ -56,9 +56,28 @@ const Popup = ({ title, desc, image, technologies, view }: any) => {
                   )}
                 </li>
                 <li>
+                  {Array.isArray(extraLinks) && 'extra links'}
+                  {Array.isArray(extraLinks) &&
+                    extraLinks.map((e, i) => (
+                      <div className='array-info' key={i}>
+                        -
+                        <a
+                          className='desc-array'
+                          href={e.link}
+                          rel='noreferrer'
+                          target='_blank'
+                          title={e.title}
+                        >
+                          {e.label}
+                        </a>
+                      </div>
+                    ))}
+                </li>
+                <li>
                   <div className='social-links'>
                     {view?.map(({ link, icon, label }: any) => (
                       <a
+                        className='btn pp-close'
                         href={link}
                         key={link}
                         rel='noreferrer'
