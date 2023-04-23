@@ -120,7 +120,22 @@ const About = () => {
                 <div className='tab-content active' id='experience'>
                   <div className='timeline'>
                     <div className='timeline-item'>
-                      <span className='date'>Sep 2021 - Now</span>
+                      <span className='date'>Jan 2023 - Now</span>
+                      <h4>
+                        Full Stack Developer - <span>Factorem</span>
+                      </h4>
+                      <p>
+                        Factorem is Southeast Asia first AI-driven platform to
+                        order custom manufactured parts. With Factorem, anyone
+                        can reduce time-to-market and get low volume high
+                        quality parts on-demand from the best factories in
+                        Southeast Asia. Get upfront quotes within SECONDS, quick
+                        manufacturability feedback and smart order fulfillment -
+                        all in one place
+                      </p>
+                    </div>
+                    <div className='timeline-item'>
+                      <span className='date'>Sep 2021 - Jan 2023</span>
                       <h4>
                         Full Stack Developer -{' '}
                         <span>PT. Bhumi Varta Technology</span>
