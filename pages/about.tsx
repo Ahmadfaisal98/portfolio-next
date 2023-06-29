@@ -127,12 +127,39 @@ const About = () => {
                       <p>
                         Factorem is Southeast Asia first AI-driven platform to
                         order custom manufactured parts. With Factorem, anyone
-                        can reduce time-to-market and get low volume high
-                        quality parts on-demand from the best factories in
-                        Southeast Asia. Get upfront quotes within SECONDS, quick
-                        manufacturability feedback and smart order fulfillment -
-                        all in one place
+                        can reduce time-to-market and get low-volume
+                        high-quality parts on demand from the best factories in
+                        Southeast Asia.
                       </p>
+                      <span>Backend:</span>
+                      <ul>
+                        <li>
+                          - Develop, improve, and deploy high-quality web
+                          service
+                        </li>
+                        <li>- Using Event-Driven Architecture</li>
+                        <li>- Integration with Stripe</li>
+                        <li>- Integration with HubSpot</li>
+                        <li>- Integration with Xero invoice</li>
+                      </ul>
+                      <span>Frontend:</span>
+                      <ul>
+                        <li>
+                          - Develop, improve, and deploy high-quality web
+                          feature
+                        </li>
+                        <li>- Developed with React and Material-UI</li>
+                        <li>- Integration with CAD Renderer</li>
+                        <li>- Integration with PBrain</li>
+                        <li>- Integration with crisp</li>
+                      </ul>
+                      <span>E2E Test:</span>
+                      <ul>
+                        <li>- Using Cypress</li>
+                        <li>- Testing user flows</li>
+                        <li>- Testing pdf files</li>
+                        <li>- Testing stripe checkout</li>
+                      </ul>
                     </div>
                     <div className='timeline-item'>
                       <span className='date'>Sep 2021 - Jan 2023</span>
@@ -146,6 +173,39 @@ const About = () => {
                         businesses to make the right decisions by giving them
                         Geospatial, Geographic, as well as Demographic insights
                       </p>
+                      <span>Backend:</span>
+                      <ul>
+                        <li>
+                          - Develop, improve, and deploy high-quality web
+                          service
+                        </li>
+                        <li>- Initiate and improve standard response API</li>
+                        <li>
+                          - Initiate and improve quality code with sonarqube
+                          (improve security hotspots, zero bugs, zero
+                          vulnerabilities, zero code smells, zero duplications)
+                        </li>
+                        <li>- Initiate and create API docs with swagger</li>
+                        <li>
+                          - Initiate and improve validation requests with ajv
+                        </li>
+                        <li>
+                          - Initiate and improve code with DTO Request and
+                          Response
+                        </li>
+                        <li>- Improve code using async await</li>
+                        <li>- Update package to support node v16</li>
+                      </ul>
+                      <span>Frontend:</span>
+                      <ul>
+                        <li>
+                          - Develop, improve, and deploy high-quality web
+                          feature
+                        </li>
+                        <li>- Improve from CSS to SASS</li>
+                        <li>- Improve components with Atomic Design</li>
+                        <li>- Developed with React and Webpack</li>
+                      </ul>
                     </div>
                     <div className='timeline-item'>
                       <span className='date'>Mei 2020 - Feb 2021</span>

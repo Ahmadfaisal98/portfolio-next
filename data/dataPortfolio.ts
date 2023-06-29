@@ -1,4 +1,4 @@
-import yourcar from '/public/img/portfolio real/yourcar.png';
+import cleaningService from '/public/img/portfolio real/cleaning-service.png';
 import game2048 from '/public/img/portfolio real/game-2048.png';
 import facebook from '/public/img/portfolio real/facebook-clone.png';
 import courseBox from '/public/img/portfolio real/courseBox.png';
@@ -69,19 +69,14 @@ export const dataPortfolio = [
     ],
   },
   {
-    title: 'Landing page - Yourcar',
-    image: yourcar,
-    desc: `Landing page with typescript, graphql, nestjs, styled-component, tailwind, full responsive`,
-    technologies: [
-      `Frontend: React, typescript, redux (with graphql), styled-component, tailwind`,
-      `Backend: Nestjs, typescript, postgres`,
-    ],
+    title: 'Landing page - Cleaning Service',
+    image: cleaningService,
+    desc: `Landing page static with full animation, full responsive`,
+    technologies: [`javascript, jQuery, bootstrap`],
     view: [
-      { link: 'https://yourcar.vercel.app/', icon: 'fa-solid fa-globe' },
       {
-        link: 'https://github.com/Ahmadfaisal98/yourcar',
-        icon: 'fa-brands fa-github',
-        label: 'View Github',
+        link: 'https://cleaning-service-achmad.vercel.app/',
+        icon: 'fa-solid fa-globe',
       },
     ],
   },
