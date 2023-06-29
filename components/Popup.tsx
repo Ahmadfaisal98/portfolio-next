@@ -24,6 +24,9 @@ const Popup = ({ title, desc, image, technologies, view, extraLinks }: any) => {
     };
   });
 
+  if (!title) {
+    return null;
+  }
   return (
     <div className={`portfolio-popup ${isOpenPopup ? 'open' : ''}`}>
       <div className='pp-inner'>
