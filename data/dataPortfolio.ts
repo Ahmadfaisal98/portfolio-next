@@ -21,7 +21,7 @@ export const dataPortfolio = [
     ],
     view: [
       {
-        link: 'https://social-ahmad.vercel.app/',
+        link: 'https://facebook-clone-ahmad.vercel.app/',
         icon: 'fa-solid fa-globe',
         label: 'View Online',
       },
