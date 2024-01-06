@@ -171,7 +171,7 @@ const About = () => {
                       <span className='date'>Sep 2021 - Jan 2023</span>
                       <h4>
                         Full Stack Developer -{' '}
-                        <span>PT. Bhumi Varta Technology</span>-{' '}
+                        <span>PT. Bhumi Varta Technology</span> -
                         <span>Indonesia (Remote)</span>
                       </h4>
                       <p>
