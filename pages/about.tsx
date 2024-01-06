@@ -43,7 +43,7 @@ const About = () => {
             </div>
             <div className='about-text'>
               <p>
-                I'm an experienced full-stack developer skilled in React JS and
+                {`I'm an experienced full-stack developer skilled in React JS and
                 Node JS, with expertise in various databases like MongoDB,
                 Firebase, Redis, MySQL, and PostgreSQL. I excel at creating
                 dynamic web solutions and have a strong track record in unit
@@ -51,7 +51,7 @@ const About = () => {
                 abilities, I have over a year of hands-on experience in business
                 management, marketing, and building strong customer
                 relationships. I'm always eager to learn and grow, making sure I
-                not only excel in my field but also love what I do.
+                not only excel in my field but also love what I do.`}
               </p>
               <h3>skills</h3>
               <div className='skills'>
