@@ -127,7 +127,8 @@ const About = () => {
                     <div className='timeline-item'>
                       <span className='date'>Jan 2023 - Now</span>
                       <h4>
-                        Full Stack Developer - <span>Factorem</span>
+                        Full Stack Developer - <span>Factorem</span> -{' '}
+                        <span>Singapore (Remote)</span>
                       </h4>
                       <p>
                         Factorem is Southeast Asia first AI-driven platform to
@@ -170,7 +171,8 @@ const About = () => {
                       <span className='date'>Sep 2021 - Jan 2023</span>
                       <h4>
                         Full Stack Developer -{' '}
-                        <span>PT. Bhumi Varta Technology</span>
+                        <span>PT. Bhumi Varta Technology</span>-{' '}
+                        <span>Indonesia (Remote)</span>
                       </h4>
                       <p>
                         Bhumi Varta Technology is Indonesia’s leading GeoSpatial
