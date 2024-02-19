@@ -5,6 +5,7 @@ import profileAbout from '/public/img/profile/Ahmad_Faisal_-_tangan_silang_-_cro
 import { useStateContext } from '../context/StateContext';
 import Link from 'next/link';
 import Head from 'next/head';
+import Experience from '../components/experience';
 
 const About = () => {
   const router = useRouter();
@@ -124,118 +125,114 @@ const About = () => {
               {toggle === 'experience' && (
                 <div className='tab-content active' id='experience'>
                   <div className='timeline'>
-                    <div className='timeline-item'>
-                      <span className='date'>Jan 2023 - Now</span>
-                      <h4>
-                        Full Stack Developer - <span>Factorem</span> -{' '}
-                        <span>Singapore (Remote)</span>
-                      </h4>
-                      <p>
-                        Factorem is Southeast Asia first AI-driven platform to
-                        order custom manufactured parts. With Factorem, anyone
-                        can reduce time-to-market and get low-volume
-                        high-quality parts on demand from the best factories in
-                        Southeast Asia.
-                      </p>
-                      <span>Backend:</span>
-                      <ul>
-                        <li>
-                          - Develop, improve, and deploy high-quality web
-                          service
-                        </li>
-                        <li>- Using Event-Driven Architecture</li>
-                        <li>- Integration with Stripe</li>
-                        <li>- Integration with HubSpot</li>
-                        <li>- Integration with Xero invoice</li>
-                      </ul>
-                      <span>Frontend:</span>
-                      <ul>
-                        <li>
-                          - Develop, improve, and deploy high-quality web
-                          feature
-                        </li>
-                        <li>- Developed with React and Material-UI</li>
-                        <li>- Integration with CAD Renderer</li>
-                        <li>- Integration with PBrain</li>
-                        <li>- Integration with crisp</li>
-                      </ul>
-                      <span>E2E Test:</span>
-                      <ul>
-                        <li>- Using Cypress</li>
-                        <li>- Testing user flows</li>
-                        <li>- Testing pdf files</li>
-                        <li>- Testing stripe checkout</li>
-                      </ul>
-                    </div>
-                    <div className='timeline-item'>
-                      <span className='date'>Sep 2021 - Jan 2023</span>
-                      <h4>
-                        Full Stack Developer -{' '}
-                        <span>PT. Bhumi Varta Technology</span> - {' '}
-                        <span>Indonesia (Remote)</span>
-                      </h4>
-                      <p>
-                        Bhumi Varta Technology is Indonesia’s leading GeoSpatial
-                        Technology Company. We provide the best tools for
-                        businesses to make the right decisions by giving them
-                        Geospatial, Geographic, as well as Demographic insights
-                      </p>
-                      <span>Backend:</span>
-                      <ul>
-                        <li>
-                          - Develop, improve, and deploy high-quality web
-                          service
-                        </li>
-                        <li>- Initiate and improve standard response API</li>
-                        <li>
-                          - Initiate and improve quality code with sonarqube
-                          (improve security hotspots, zero bugs, zero
-                          vulnerabilities, zero code smells, zero duplications)
-                        </li>
-                        <li>- Initiate and create API docs with swagger</li>
-                        <li>
-                          - Initiate and improve validation requests with ajv
-                        </li>
-                        <li>
-                          - Initiate and improve code with DTO Request and
-                          Response
-                        </li>
-                        <li>- Improve code using async await</li>
-                        <li>- Update package to support node v16</li>
-                      </ul>
-                      <span>Frontend:</span>
-                      <ul>
-                        <li>
-                          - Develop, improve, and deploy high-quality web
-                          feature
-                        </li>
-                        <li>- Improve from CSS to SASS</li>
-                        <li>- Improve components with Atomic Design</li>
-                        <li>- Developed with React and Webpack</li>
-                      </ul>
-                    </div>
-                    <div className='timeline-item'>
-                      <span className='date'>Mei 2020 - Feb 2021</span>
-                      <h4>
-                        Director - <span>QOSin Indonesia</span>
-                      </h4>
-                      <p>
-                        - Handle business agent boarding house (primer), travel,
-                        and convection for market student
-                        <br /> - Handle cooperation partner QOSin
-                      </p>
-                    </div>
-                    <div className='timeline-item'>
-                      <span className='date'>Jan 2020 - Jan 2021</span>
-                      <h4>
-                        Manager of Events -{' '}
-                        <span>Muda Mandiri Group Indonesia (MMGI)</span>
-                      </h4>
-                      <p>
-                        - Handle concept event organizer
-                        <br />- Marketing event organizer
-                      </p>
-                    </div>
+                    <Experience
+                      date='Jan 2024 - Now'
+                      desc='The biggest remote worker platform for IT education in Indonesia.'
+                      subTitle='Remote Worker ID - (Remote - Part Time)'
+                      title='Mentor Frontend'
+                    />
+                    <Experience
+                      data={[
+                        {
+                          section: 'Backend',
+                          list: [
+                            'Develop, improve, and deploy high-quality web',
+                            'Using Event-Driven Architecture',
+                            'Integration with Stripe',
+                            'Integration with HubSpot',
+                            'Integration with Xero invoice',
+                          ],
+                        },
+                        {
+                          section: 'Frontend',
+                          list: [
+                            'Develop, improve, and deploy high-quality web feature',
+                            'Developed with React and Material-UI',
+                            'Integration with CAD Renderer',
+                            'Integration with PBrain',
+                            'Integration with crisp',
+                          ],
+                        },
+                        {
+                          section: 'E2E Test',
+                          list: [
+                            'Using Cypress',
+                            'Testing user flows',
+                            'Testing pdf files',
+                            'Testing stripe checkout',
+                          ],
+                        },
+                      ]}
+                      date='Jan 2023 - Now'
+                      desc='Factorem is Southeast Asia first AI-driven platform to
+                      order custom manufactured parts. With Factorem, anyone
+                      can reduce time-to-market and get low-volume
+                      high-quality parts on demand from the best factories in
+                      Southeast Asia.'
+                      subTitle='Factorem - Singapore (Remote - Full Time)'
+                      title='Full Stack Developer'
+                    />
+                    <Experience
+                      data={[
+                        {
+                          section: 'Backend',
+                          list: [
+                            'Develop, improve, and deploy high-quality web service',
+                            'Initiate and improve standard response API',
+                            'Initiate and improve quality code with sonarqube (improve security hotspots, zero bugs, zero vulnerabilities, zero code smells, zero duplications)',
+                            'Initiate and create API docs with swagger',
+                            'Initiate and improve validation requests with ajv',
+                            'Initiate and improve code with DTO Request and Response',
+                            'Improve code using async await',
+                            'Update package to support node v16',
+                          ],
+                        },
+                        {
+                          section: 'Frontend',
+                          list: [
+                            'Develop, improve, and deploy high-quality web feature',
+                            'Improve from CSS to SASS',
+                            'Improve components with Atomic Design',
+                            'Developed with React and Webpack',
+                          ],
+                        },
+                      ]}
+                      date='Sep 2021 - Jan 2023'
+                      desc='Bhumi Varta Technology is Indonesia’s leading GeoSpatial
+                      Technology Company. We provide the best tools for
+                      businesses to make the right decisions by giving them
+                      Geospatial, Geographic, as well as Demographic insights'
+                      subTitle='Indonesia (Remote - Full Time)'
+                      title='Full Stack Developer'
+                    />
+                    <Experience
+                      data={[
+                        {
+                          section: '',
+                          list: [
+                            'Handle business agent boarding house (primer), travel, and convection for market student',
+                            'Handle cooperation partner QOSin',
+                          ],
+                        },
+                      ]}
+                      date='Mei 2020 - Feb 2021'
+                      subTitle='QOSin Indonesia'
+                      title='Director'
+                    />
+                    <Experience
+                      data={[
+                        {
+                          section: '',
+                          list: [
+                            'Handle concept event organizer',
+                            'Marketing event organizer',
+                          ],
+                        },
+                      ]}
+                      date='Jan 2020 - Jan 2021'
+                      subTitle='Muda Mandiri Group Indonesia (MMGI)'
+                      title='Manager of Events'
+                    />
                   </div>
                 </div>
               )}
