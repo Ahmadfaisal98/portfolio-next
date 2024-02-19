@@ -5,7 +5,7 @@ import profileAbout from '/public/img/profile/Ahmad_Faisal_-_tangan_silang_-_cro
 import { useStateContext } from '../context/StateContext';
 import Link from 'next/link';
 import Head from 'next/head';
-import Experience from '../components/experience';
+import Experience from '../components/Experience';
 
 const About = () => {
   const router = useRouter();
