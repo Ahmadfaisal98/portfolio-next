@@ -27,7 +27,7 @@ const Experience = ({
       <p>{desc}</p>
       {data.map((value) => (
         <Fragment key={value.section}>
-          <span>{value.section}:</span>
+          {value.section && <span>{value.section}:</span>}
           <ul>
             {value.list?.map((listValue) => (
               <li key={listValue}>- {listValue}</li>
