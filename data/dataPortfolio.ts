@@ -83,11 +83,6 @@ export const dataPortfolio = [
         link: 'https://cleaning-service-achmad.vercel.app/',
         icon: 'fa-solid fa-globe',
       },
-      {
-        link: 'https://github.com/Ahmadfaisal98/cleaning-service/',
-        icon: 'fa-brands fa-github',
-        label: 'View Github',
-      },
     ],
   },
   {
@@ -119,11 +114,6 @@ export const dataPortfolio = [
         icon: 'fa-solid fa-globe',
         label: 'View Online',
       },
-      {
-        link: 'https://github.com/Ahmadfaisal98/portfolio-next/',
-        icon: 'fa-brands fa-github',
-        label: 'View Github',
-      },
     ],
   },
   {
@@ -136,11 +126,6 @@ export const dataPortfolio = [
         link: 'https://landing-mobile-app-achmad.vercel.app/',
         icon: 'fa-solid fa-globe',
         label: 'View Online',
-      },
-      {
-        link: 'https://github.com/Ahmadfaisal98/landing-mobile-app/',
-        icon: 'fa-brands fa-github',
-        label: 'View Github',
       },
     ],
   },
