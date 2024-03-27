@@ -202,7 +202,7 @@ const About = () => {
                       Technology Company. We provide the best tools for
                       businesses to make the right decisions by giving them
                       Geospatial, Geographic, as well as Demographic insights'
-                      subTitle='Indonesia (Remote - Full Time)'
+                      subTitle='PT. Bhumi Varta Technology - Indonesia (Remote - Full Time)'
                       title='Full Stack Developer'
                     />
                     <Experience
